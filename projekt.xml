@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zadany_ukol test_id="1" vaha_testu_0_10="4">
+  <zadani>Vytvorte program, ktery bude pocitat hloubku na zaklade delky padani predmetu dovnitr</zadani>
+  <programovaci_jazyk_testovani>C++</programovaci_jazyk_testovani>
+
+  <zadal_ucitel>
+    <jmeno>Jan</jmeno>
+    <prijmeni>Rubes</prijmeni>
+    <email>jan.rubes@czu.cz</email>
+    <telefon>773343545</telefon>
+    <kancelar>D456</kancelar>
+  </zadal_ucitel>
+  
+  <trida rocnik="1" trida="A">
+    <student obor="Informatika" ID_Studenta="0001">
+      <jmeno>Filip</jmeno>
+      <prijmeni>Havir</prijmeni>
+      <vysledek>
+        <test id="1">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>23</vstup>
+          <vyslo_studentovi>1250</vyslo_studentovi>
+          <melo_vyjit>1250</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>5</beh_programu_sekundy>
+        </test>
+        <test id="2">
+          <zkompilovany_program>0</zkompilovany_program>
+          <vstup>32</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>1200</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="3">
+          <zkompilovany_program>0</zkompilovany_program>
+          <vstup>12</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>2200</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="4">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>43</vstup>
+          <vyslo_studentovi>200</vyslo_studentovi>
+          <melo_vyjit>300</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>4</beh_programu_sekundy>
+        </test>
+      </vysledek>
+    </student>
+
+    <student obor="Informatika" ID_Studenta="0002">
+      <jmeno>Marie</jmeno>
+      <prijmeni>Biesová</prijmeni>
+      <vysledek>
+        <test id="1">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>23</vstup>
+          <vyslo_studentovi>1250</vyslo_studentovi>
+          <melo_vyjit>333</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>5</beh_programu_sekundy>
+        </test>
+        <test id="2">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>32</vstup>
+          <vyslo_studentovi>1200</vyslo_studentovi>
+          <melo_vyjit>1200</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>5</beh_programu_sekundy>
+        </test>
+        <test id="3">
+          <zkompilovany_program>0</zkompilovany_program>
+          <vstup>0</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>2200</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="4">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>4</vstup>
+          <vyslo_studentovi>200</vyslo_studentovi>
+          <melo_vyjit>200</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>4</beh_programu_sekundy>
+        </test>
+      </vysledek>
+    </student>
+
+    <student obor="Informatika" ID_Studenta="0003">
+      <jmeno>André</jmeno>
+      <prijmeni>Kadlec</prijmeni>
+      <vysledek>
+        <test id="1">
+          <zkompilovany_program>0</zkompilovany_program>
+          <vstup>23</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>1250</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="2">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>32</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>1200</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="3">
+          <zkompilovany_program>0</zkompilovany_program>
+          <vstup>12</vstup>
+          <vyslo_studentovi>0</vyslo_studentovi>
+          <melo_vyjit>2200</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>0</beh_programu_sekundy>
+        </test>
+        <test id="4">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>43</vstup>
+          <vyslo_studentovi>200</vyslo_studentovi>
+          <melo_vyjit>400</melo_vyjit>
+          <vysledek>0</vysledek>
+          <beh_programu_sekundy>4</beh_programu_sekundy>
+        </test>
+      </vysledek>
+    </student>
+
+    <student obor="Informatika" ID_Studenta="0004">
+      <jmeno>Zora</jmeno>
+      <prijmeni>Gebbels</prijmeni>
+      <vysledek>
+        <test id="1">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>23</vstup>
+          <vyslo_studentovi>1250</vyslo_studentovi>
+          <melo_vyjit>1250</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>5</beh_programu_sekundy>
+        </test>
+        <test id="2">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>32</vstup>
+          <vyslo_studentovi>1200</vyslo_studentovi>
+          <melo_vyjit>1200</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>5</beh_programu_sekundy>
+        </test>
+        <test id="3">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>12</vstup>
+          <vyslo_studentovi>2200</vyslo_studentovi>
+          <melo_vyjit>2200</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>7</beh_programu_sekundy>
+        </test>
+        <test id="4">
+          <zkompilovany_program>1</zkompilovany_program>
+          <vstup>43</vstup>
+          <vyslo_studentovi>200</vyslo_studentovi>
+          <melo_vyjit>200</melo_vyjit>
+          <vysledek>1</vysledek>
+          <beh_programu_sekundy>4</beh_programu_sekundy>
+        </test>
+
+      </vysledek>
+    </student>
+  </trida>
+</zadany_ukol>

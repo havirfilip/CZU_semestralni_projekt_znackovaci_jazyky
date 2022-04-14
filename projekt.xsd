@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="jmeno" type="xs:string"/>
+  <xs:element name="prijmeni" type="xs:string"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="telefon">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:length value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="kancelar" type="xs:string"/>
+  <xs:element name="zkompilovany_program" type="xs:byte"/>
+  <xs:element name="vstup" type="xs:byte"/>
+  <xs:element name="vyslo_studentovi" type="xs:short"/>
+  <xs:element name="melo_vyjit" type="xs:short"/>
+  <xs:element name="programovaci_jazyk_testovani">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="C++"/>
+            <xs:enumeration value="Java"/>
+            <xs:enumeration value="C#"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="beh_programu_sekundy">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:maxInclusive value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="vysledek">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="test" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zkompilovany_program"/>
+        <xs:element ref="vstup"/>
+        <xs:element ref="vyslo_studentovi"/>
+        <xs:element ref="melo_vyjit"/>
+        <xs:element ref="vysledek"/>
+        <xs:element ref="beh_programu_sekundy"/>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="jmeno"/>
+        <xs:element ref="prijmeni"/>
+        <xs:element ref="vysledek"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="obor" use="required"/>
+      <xs:attribute type="xs:byte" name="ID_Studenta" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zadani" type="xs:string"/>
+  
+  <xs:element name="zadal_ucitel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="jmeno"/>
+        <xs:element ref="prijmeni"/>
+        <xs:element ref="email"/>
+        <xs:element ref="telefon"/>
+        <xs:element ref="kancelar"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="trida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="student" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="rocnik"/>
+      <xs:attribute type="xs:string" name="trida"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="zadany_ukol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zadani"/>
+        <xs:element ref="programovaci_jazyk_testovani"/>
+        <xs:element ref="zadal_ucitel"/>
+        <xs:element ref="trida"/>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="test_id"/>
+      <xs:attribute type="xs:byte" name="vaha_testu_0_10"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
